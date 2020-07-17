@@ -1,0 +1,11 @@
+#container{
+	height: 400px;
+	width: 400px;
+	border:2px solid black;
+	margin:40px;
+	/*overflow-wrap: break-word;
+	word-wrap: break-word;*/
+	/*background-image:linear-gradient(100deg,to top left,red,blue,green);*/
+	/*background:repeating-linear-gradient(to top left,red,blue 10px);	*/
+	background:radial-gradient(blue,black,green);
+}

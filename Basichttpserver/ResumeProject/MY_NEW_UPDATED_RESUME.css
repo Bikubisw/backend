@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+/* body header */
+#body-header{
+height: 65vh;
+background-image: url(IMAGE/macbook_mouse.jpg);
+background-size:cover;
+opacity:0.8;
+background-position: center;
+background-attachment: fixed;
+/* padding-bottom:1.2rem; */
+}

@@ -1,0 +1,899 @@
+body{
+	margin: 0px;
+	/* background-color: black; */
+
+	}
+body::-webkit-scrollbar{
+	 display: none;
+}
+
+/* heading section */
+
+.musicplayer-heading{
+	margin-left:15%;
+	height:10vh;
+	width:68%;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:space-around;
+	/* border: 2px solid black; */
+	background-color:#050534bd;
+	position:fixed;
+	z-index:8;
+	/* height:10%; */
+	/* border:2px solid black; */
+	  /* backface-visibility: hidden; */
+
+
+}
+.musicplayer-logo{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-items: center;
+	height:100%;
+	width:30%;
+	/* border: 2px solid black; */
+	z-index: 1;
+}
+.seach-notification-login{
+	display:inline-block;
+	width:40%;
+	/* border: 2px solid black; */
+	text-align: right;
+	/* border: 2px solid black; */
+	margin-left:16%;
+	margin-top:0.8%;
+}
+/* music-player logo */
+.musicplayer-logo img{
+	border-radius:50%;
+	position:relative;
+	right:2.5%;
+}
+.musicplayer-logo h3{
+	height:50px;
+color: white;
+position: relative;
+font-family: sans-serif;
+right:5%;
+top:2%;
+}
+.musicplayer-logo h2{
+	height:50px;
+color: white;
+position: relative;
+font-family: sans-serif;
+right:28%;
+top:23%;
+}
+
+
+.favourite {
+color: white;
+position: relative;
+
+}
+/* seach-notification-login */
+.seach-notification-login{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+}
+.search{
+	/* margin:2px; */
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	top:30%;
+
+}
+#search-form{
+	position: relative;
+	/* z-index:2; */
+}
+
+#microphone{
+	position: relative;
+
+	
+}
+#search-button{
+	position: relative;
+
+
+}
+.notification{
+	position:relative;
+	left:10%;
+	top:30%;
+
+	}
+.login{
+	position:relative;
+	left:25%;
+	top:12px;
+	height:auto;
+	}
+.login::after{
+	content:'';
+	height:10px;
+	width:10px;
+	border-radius:50%;
+	position:absolute;
+	background-color:red;
+	right:110px;
+	top:20px;
+
+}
+.login img{
+	border-radius:50%;
+}
+/* #sections */
+main{
+	position:fixed;
+	margin-left:15%;
+	height:175vh;
+	width:45%;
+	background-color:#050534bd;
+	top:74px;
+	z-index:4;
+
+}
+#mainsection{
+	height:83vh;
+	width:auto;
+	overflow-y:scroll;
+
+}
+#mainsection::-webkit-scrollbar { 
+	display: none;
+
+}
+section{
+	width:95%;
+	height:auto;
+	margin-left:3%;
+	margin-bottom:2%;
+	margin-right:50px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+}
+/* music-logos */
+#music-logos .image1{
+	height:180px;
+	width:195px;	
+	border: 2px solid black; 
+	background-image:url("images/royalty.jpg");
+	background-size:cover;
+	background-position: center;
+	padding-right:5px;
+	transition:all 0.1s ease-in-out;
+}
+#music-logos .image2{
+	height:180px;
+	width:195px;
+	border: 2px solid black;
+	background-image:url("images/Mood.jpg");
+	background-size:cover;
+	background-position:center;
+	transition:all 0.1s ease-in-out;
+	margin-left:-5%;
+
+}
+#music-logos .image3{
+height:180px;
+	width:195px;	
+	border: 2px solid black;
+	background-image:url("images/NewEDM.jpg");
+	background-size:cover;
+	background-position: center;
+	transition:all  0.1s ease-in-out;
+	margin-left:-5%;
+
+}
+.image1:hover{
+	transform:scale(1.9,1.1); 
+	box-shadow:5px 5px 18px red;
+}
+.image2:hover{
+	transform:scale(1.9,1.1); 
+	box-shadow:5px 5px 18px red;
+
+}
+.image3:hover{
+	transform:scale(1.9,1.1); 
+	box-shadow:5px 5px 18px red;
+
+}
+.section-heading{
+	 position:relative;
+	color:white;
+	font-family: sans-serif;
+	font-size:1rem;
+	/* right:79%; */
+	margin-right:50%;
+	right:15%;
+
+}
+/* latest release */
+#latest-relaease .onism{
+	width:40%;
+	height:75px;
+	/* border: 2px solid black; */
+	margin-left:-4%;
+	margin-bottom:1.5%;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.onism .onism-picture{
+	height:100%;
+	width:80px;
+	/* border:1px solid black; */
+	background-image:url("images/onism.jpg");
+	background-size:cover;
+	background-position:center; 
+	/* background-attachment: fixed; */
+}
+.onism-picture:hover{
+	opacity:0.8;
+}
+.onism24{
+	position: relative;
+	right:5%;
+}
+.release-date{
+	height:100%;
+	width:80px;
+	/* border: 1px solid black; */
+	margin-left:4%;
+}
+.release-date p{
+	font-family:sans-serif;
+	color: grey;
+	font-size:0.6rem;
+	position: relative;
+	bottom:12px;
+}
+.release-date h5{
+	font-family:sans-serif;
+	color: white;
+	font-size:0.7rem;
+}
+.hamburg{
+	 position: relative;
+	height:65%;
+	width:40px;
+	text-align: right;
+	/* border: 2px solid black; */
+	left:25%;
+}
+.hamburg p{
+	position:relative;
+	font-size:0.7rem;
+	color:grey;
+	bottom:6px;
+}
+#lightboxone{
+	height:auto;
+	position: fixed;
+	width: 100px;
+	top: 52%;
+	left:32%;
+	background-color: lightgrey;
+	z-index: 1;
+	display: none;
+}
+.items{
+	width:100%;
+	height:20px;
+	border-bottom:1.5px solid grey;
+	/* padding-left:4px;  */
+}
+#lightboxone span{
+	color:#746464;
+	font-size:.6rem;
+	font-family:sans-serif;
+}
+
+#lightboxtwo{
+	height:auto;
+	position:fixed;
+	width: 100px;
+	bottom:34%;
+	left:54%;
+	background-color: lightgrey;
+	z-index: 1;
+	display: none;
+}
+#lightboxtwo span{
+	color:#746464;
+	font-size:.6rem;
+	font-family:sans-serif;
+}
+#lightboxthree{
+	height:auto;
+	position: fixed;
+	width: 100px;
+	top: 64%;
+	right:62%;
+	background-color: lightgrey;
+	z-index: 1;
+	display: none;
+}
+#lightboxthree span{
+	color:#746464;
+	font-size:.6rem;
+	font-family:sans-serif;
+}
+#lightboxfour{
+	height:auto;
+	position: fixed;
+	width: 100px;
+	top: 64%;
+	left:53%;
+	background-color: lightgrey;
+	z-index: 1;
+	display: none;
+}
+#lightboxfour span{
+	color:#746464;
+	font-size:.6rem;
+	font-family:sans-serif;
+}
+/* popular artists */
+#popular-artisits .artist{
+height:90px;
+width:90px;
+/* border: 2px solid black; */
+border-radius:50%;
+margin-bottom:2%;
+z-index:1
+}
+#popular-artisits .artist:hover{
+	opacity:0.6;
+}
+.artist p{
+	font-family:sans-serif;
+	color:#ffffffc4;
+	font-size: 0.7rem;
+	text-align: center;
+	position: relative;
+	top:94%;
+}
+.artist1{
+	background-image: url('images/Edsheeran.jpg');
+	background-size:cover;
+	background-position:center;
+
+}
+.artist2{
+	background-image: url('images/coldplay.jpg');
+	background-size:cover;
+	background-position:center; 
+
+}
+.artist3{
+background-image: url('images/Zayn.jpg');
+	background-size:cover;
+	background-position:center;
+}
+.artist4{
+	background-image: url('images/puth.jpg');
+	background-size:cover;
+	background-position:center;
+}
+.artist5{
+	background-image: url('images/imagine.jpg');
+	background-size:cover;
+	background-position:center;
+}
+.artist6{
+	background-image: url('images/bruno.jpg');
+	background-size:cover;
+	background-position:center;
+}
+/* Music stations */
+.category0{
+	height:50px;
+	width:85px;
+	background-color:yellow;
+	text-align: center;
+	margin-top:4%;
+
+}
+.sub-category1{
+	height:60px;
+	width: 72px;
+	background-color:yellow;
+	text-align: center;
+	position:relative;
+	left:7%;
+	bottom:5px;
+}
+.sub-category2{
+	height:74px;
+	width: 62px;
+	background-color:#ff0000d4;
+	position:relative;
+	left:6%;
+	bottom:8px;
+	z-index:1;
+}
+.category{
+	height:75px;
+	width:75px;
+	margin-top:3%;
+	border-radius:50%;
+	opacity:0.8;
+	/* padding-bottom:2px; */
+}
+.category1{
+background-image:url('images/love.jpg');
+background-size: cover;
+background-position:center;
+}
+.category2{
+background-image:url('images/retro.jpg');
+background-size: cover;
+background-position:center;
+}
+.category3{
+background-image:url('images/chill.jpg');
+background-size: cover;
+background-position:center;
+}
+.category4{
+background-image:url('images/workout.jpg');
+background-size: cover;
+background-position:center;
+}
+.category5{
+background-image:url('images/rock.jpg');
+background-size: cover;
+background-position:center;
+}
+.category6{
+background-image:url('images/pop.jpg');
+background-size: cover;
+background-position:center;
+}
+.category p{
+	color: white;
+	font-size:0.6rem;
+	font-weight:600;
+	text-align: center;
+	position:relative;
+	top:18px;
+}
+.sub-category2 p{
+	color:white;
+	font-weight:600;
+	font-size:0.6rem;
+	position:relative;
+	bottom:10px;
+}
+
+/* song Mood */
+#song-mood .songmood{
+height:120px;
+width:205px;
+
+}
+.songmood1{
+background-image:url('images/party.jpg');
+background-size: cover;
+background-position:center;
+}
+.songmood2{
+background-image:url('images/electronic.jpg');
+background-size: cover;
+background-position:center;
+}
+.songmood3{
+background-image:url('images/roadtrip.jpg');
+background-size: cover;
+background-position:center;
+}
+.songmood p{
+	color: white;
+	font-size:1rem;
+	font-weight:600;
+	font-family: sans-serif;
+	text-align: center;
+	position: relative;
+	top:20px;
+}
+/* latest English */
+#latest-english .song{
+	height:90px;
+	width:85px;
+	/* border:1px solid black; */
+	background-size: cover;
+   background-position:center;
+   margin-bottom:4%;
+}
+#latest-english .song1{
+background-image:url('images/jones.jpg');
+
+}
+#latest-english .song2{
+background-image:url('images/coldplay.jpg');
+
+}
+#latest-english .song3{
+background-image:url('images/Edsheeran.jpg');
+
+}
+#latest-english .song4{
+background-image:url('images/pitbull.jpg');
+
+}
+#latest-english .song5{
+background-image:url('images/top.jpg');
+
+}
+#latest-english .song6{
+background-image:url('images/lara.jpg');
+
+}
+.song p{
+	color:white;
+	font-weight:600;
+	font-size:0.6rem;
+	line-height:4px;
+	/* text-align:left; */
+	position:relative;
+	top:98%;
+}
+/* latest Hindi */
+#latest-hindi .song{
+	height:90px;
+	width:85px;
+	/* border:1px solid black; */
+	background-size: cover;
+   background-position:center;
+   margin-bottom:4%;
+}
+#latest-hindi .song1{
+background-image:url('images/jones.jpg');
+
+}
+#latest-hindi .song2{
+background-image:url('images/coldplay.jpg');
+
+}
+#latest-hindi .song3{
+background-image:url('images/Edsheeran.jpg');
+
+}
+#latest-hindi .song4{
+background-image:url('images/pitbull.jpg');
+
+}
+#latest-hindi .song5{
+background-image:url('images/top.jpg');
+
+}
+#latest-hindi .song6{
+background-image:url('images/lara.jpg');
+
+}
+/* Queue */
+aside{
+	display:block;
+	margin-left:60%;
+	height:auto;
+	width:23%;
+	background-color: #050534bd;
+	position:fixed;
+	bottom:45px;
+	right:261px;
+	z-index:99.5;
+
+}
+
+.queue-heading{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	/* position:fixed; */
+	height:4%;
+	width:100%;
+	z-index:9;
+	padding-top:2%;
+
+}
+.queue-heading h2{
+	color:white;
+	font-weight: 600;
+	position:relative;
+	right:8%;
+	font-family: sans-serif;
+	font-size:1.2rem;
+
+}
+.queue-heading p{
+	color:#009688e0;
+	font-size:.7rem;
+	position:relative;
+	top:15px;
+	left:5%;
+
+}
+
+#queue{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	height:76vh;
+	width:100%;
+	overflow:auto;
+	/* position:static; */
+	z-index:10;
+
+}
+#queue::-webkit-scrollbar{
+display: none;
+}
+
+#queue .queue-same{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+	width:100%;
+	height:45px;
+
+	/* border:2px solid black; */
+}
+.queimg{
+	height: 32px;
+	width:32px;
+	position:relative;
+	right:57px;
+	background-size: cover;
+	background-position:center;
+}
+.queue-title{
+	height:40px;
+	width:100px;
+	text-align: left;
+	line-height:10px;
+	position: relative;
+	right:28%;
+	font-family: san;
+
+
+}
+.number{
+	color:grey;
+	font-family: sans-serif;
+	font-size: 0.7rem;
+	position:relative;
+	right:18px;
+}
+.queue-title h4{
+	color:white;
+	font-size:.7rem;
+	margin-top: 0;
+	margin-bottom:0;
+	position: relative;
+	top: 8px;
+
+}
+.queue-title p{
+	color:grey;
+	font-size:.7rem;
+	top:20px;
+}
+.queimg1{
+	background-image:url('images/roadtrip.jpg');
+}
+.queimg2{
+	background-image:url('images/newsong1.jpg');
+}
+.queimg3{
+	background-image:url('images/newsong2.jpg');
+}
+.queimg4{
+	background-image:url('images/newsong3.jpg');
+}
+.queimg5{
+	background-image:url('images/rockstar.jpg');
+}
+.queimg6{
+	background-image:url('images/tara.jpg');
+}
+.queimg7{
+	background-image:url('images/workout.jpg');
+}
+.queimg8{
+	background-image:url('images/Zayn.jpg');
+}
+.queimg9{
+	background-image:url('images/party.jpg');
+}
+.queimg10{
+	background-image:url('images/roadtrip.jpg');
+}
+.queimg11{
+	background-image:url('images/rock.jpg');
+}
+.queimg12{
+	background-image:url('images/kate.jpg');
+}
+.queimg13{
+	background-image:url('images/jones.jpg');
+}
+.queimg14{
+	background-image:url('images/EdSheeran.jpg');
+}
+.queimg15{
+	background-image:url('images/worry.jpg');
+}
+.queimg16{
+	background-image:url('images/party.jpg');
+}
+.queimg17{
+	background-image:url('images/worry.jpg');
+}
+.queimg18{
+	background-image:url('images/rock.jpg');
+}
+.queimg19{
+	background-image:url('images/roadtrip.jpg');
+}
+.fa-heart{
+	color:white;
+	position: relative;
+	right:50px;
+}
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+	margin-left:15%;
+	height:7.6vh;
+	width:68%;
+	/* border:2px solid black; */
+	position:fixed;
+	top:92.5vh;
+	background-color:#000000c9;
+	z-index: 5;
+}
+.current-song{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+	height:100%;
+	width: 20%;
+}
+.current-song-image{
+	background-image:url('images/john.jpg');
+	background-size: cover;
+	background-position: center;
+	height:35px;
+	width: 35px;
+}
+.current-song-name{
+	height:30px;
+	width:70px;
+	/* border: 1px solid white; */
+	line-height:5px;
+	position: relative;
+	right:6%;
+
+	}
+.current-song-sign{
+	height: 40px;
+	width: 40px;
+	/* border: 1px solid white; */
+}
+.play-button{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	width:40%;
+}
+
+.play-button-signs{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+	height:50%;
+	width:60%;
+	position:relative;
+	top: 10%;
+	left:20%;
+}
+.play-button-time{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+	height:40%;
+	width:100%;
+	/* border:1px solid white; */
+
+
+}
+.play-button-time .start{
+	color: grey;
+	font-size:.6rem;
+
+}
+.song-time{
+	width:75%;
+	height:20%;
+	background-color:#607d8ba1;
+	border-radius:50px;
+
+}
+.song-done{
+	height: 100%;
+	width: 40%;
+	background-color:green;
+	border-radius: 50px;
+}
+.song-done::after{
+	content:'';
+	height:10px;
+	width:10px;
+	border-radius:50%;
+	position:absolute;
+	background-color:white;
+	right:52.5%;
+	bottom:12%;
+}
+.sound-control{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: center;
+	height: 100%;
+	width:20%;
+	border:1px solid white;
+}
+.volume{
+	width:40%;
+	height:8%;
+	background-color:#607d8ba1;
+	border-radius:50px;
+
+}
+.volume-rase{
+	height: 100%;
+	width: 40%;
+	background-color:green;
+	border-radius: 50px;
+}
+.volume-rase::after{
+	content:'';
+	height:8px;
+	width:8px;
+	border-radius:50%;
+	position:absolute;
+	background-color:white;
+	right:11%;
+	bottom:41%;
+
+}
+
+
+

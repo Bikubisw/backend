@@ -1,0 +1,26 @@
+.outer_box{
+    width:100%;
+    height:200px;
+    outline:1px solid red;
+    overflow:hidden;
+}
+.inner_box {
+    float: left;
+    height: 200px;
+    width: 25%;
+    transition: all 500ms ease;
+    position:relative;
+    background:black;
+     -webkit-background-clip: padding-box; 
+  -moz-background-clip:    padding; 
+  background-clip:         padding-box;
+    outline:1px solid white;
+}
+.first {clear: left;}
+.a{background:yellow;}
+.b{background:red;}
+.c{background:blue;}
+.d{background:green;}
+
+.inner_box.hover {  width: 30%;   }
+.inner_box.sliding {  width: 23.3%; }

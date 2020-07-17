@@ -1,0 +1,624 @@
+body{
+	margin: 0px;
+	background-color:black;
+}
+
+body::-webkit-scrollbar {
+display:none; 
+}
+/* heading section */
+
+.musicplayer-heading{
+	margin-left:15%;
+	height:10vh;
+	width:68%;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:space-around;
+	/* border: 2px solid black; */
+	background-color:#050534bd;
+	position:fixed;
+	z-index:8;
+	/* height:10%; */
+	/* border:2px solid black; */
+	  /* backface-visibility: hidden; */
+
+}
+.musicplayer-logo{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-items: center;
+	height:100%;
+	width:30%;
+	/* border: 2px solid black; */
+	z-index: 1;
+}
+.seach-notification-login{
+	display:inline-block;
+	width:40%;
+	/* border: 2px solid black; */
+	text-align: right;
+	/* border: 2px solid black; */
+	margin-left:16%;
+	margin-top:0.8%;
+}
+/* music-player logo */
+.musicplayer-logo img{
+	border-radius:50%;
+	position:relative;
+	right:2.5%;
+}
+.musicplayer-logo h3{
+	height:50px;
+	color: white;
+	position: relative;
+	font-family: sans-serif;
+	right:5%;
+	top:2%;
+}
+.musicplayer-logo h2{
+	height:50px;
+color: white;
+position: relative;
+font-family: sans-serif;
+right:28%;
+top:23%;
+}
+
+
+.favourite {
+color: white;
+position: relative;
+
+}
+/* seach-notification-login */
+.seach-notification-login{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+}
+.search{
+	/* margin:2px; */
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	top:30%;
+
+}
+#search-form{
+	position: relative;
+	/* z-index:2; */
+}
+
+#microphone{
+	position: relative;
+
+	
+}
+#search-button{
+	position: relative;
+
+
+}
+.notification{
+	position:relative;
+	left:10%;
+	top:30%;
+
+	}
+.login{
+	position:relative;
+	left:25%;
+	top:12px;
+	height:auto;
+	}
+.login::after{
+	content:'';
+	height:10px;
+	width:10px;
+	border-radius:50%;
+	position:absolute;
+	background-color:red;
+	right:110px;
+	top:20px;
+
+}
+.login img{
+	border-radius:50%;
+}
+/* main section */
+main{
+	position: fixed;
+	margin-left:15%;
+	height:175vh;
+	width:45%;
+	background-color:#050534bd;
+	top:74px;
+	z-index:4;
+
+}
+#main-section{
+	height:100%;
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content:space-around;
+
+}
+/* about artist */
+#about-artist{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	height:18%;
+	width:84%;
+	margin-left:12%;
+	background-color:#0e0e608c;
+	position: relative;
+	top: 2%;
+}
+.artist-image{
+	background-image:url('images/coldplay.jpg');
+	background-size:cover;
+	background-position:center;
+	height:100%;
+	width:40%;
+	border-bottom-left-radius:50px;
+	border-bottom-right-radius:50px;
+	opacity:0.8;
+}
+.artist-desc{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	height:50%;
+	width:55%;
+	margin-left:4%;
+	margin-top:6%;
+}
+/* song description */
+.song-play{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	height:30%;
+	width:30%;
+	position:relative;
+	bottom:35%;
+	left: 41.5%;
+}
+.play{
+	height:25px;
+	width:80px;
+	text-align:center;
+	background-image:linear-gradient(to right,#0000ffb8,#ff00f78c);
+	border: 0;
+}
+.play p{
+	color:white;
+	font-family:sans-serif;
+	font-size:0.7rem;
+	margin: 0;
+}
+.follow{
+	color:#ffffffd1;
+	font-family: sans-serif;
+	font-size:0.7rem;
+	position: relative;
+	left: 8%;
+	top: 4%;
+}
+/* similar song */
+#similar-song{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	justify-content:space-around;
+	height:24%;
+	width:84%;
+	margin-left:12%;
+	background-color:inherit;	
+	position:relative;
+	top:3%;
+	overflow-y: scroll;
+}
+#similar-song::-webkit-scrollbar{
+	display:none;
+}
+#similar-song .song-section{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+	height:45px;
+	width:100%;
+	margin-bottom:7px;
+	background-color:#3e5da226;
+}
+ /* queue section */
+.queimg{
+	height: 32px;
+	width:32px;
+	position:relative;
+	right:75px;
+	background-size: cover;
+	background-position:center;
+}
+.queue-title{
+	height:40px;
+	width:100px;
+	text-align: left;
+	line-height:10px;
+	position: relative;
+	right:22%;
+	font-family: sans-serif;
+
+
+}
+.number{
+	color:grey;
+	font-family: sans-serif;
+	font-size: 0.7rem;
+	position:relative;
+	right:22px;
+}
+.queue-title h4{
+	color:white;
+	font-size:.7rem;
+	margin-top: 0;
+	margin-bottom:0;
+	position: relative;
+	top: 8px;
+
+}
+.queue-title p{
+	color:#ffffff96;
+	font-size:.6rem;
+	top:20px;
+}
+
+.fa-heart{
+	color:white;
+	position: relative;
+	font-size:0.8rem;
+	left:35px;
+}
+.fa-plus{
+	color: white;
+	position:relative;
+	font-size:0.8rem;
+}
+.queimg1{
+	background-image:url('images/roadtrip.jpg');
+}
+.queimg2{
+	background-image:url('images/newsong1.jpg');
+}
+.queimg3{
+	background-image:url('images/newsong2.jpg');
+}
+.queimg4{
+	background-image:url('images/newsong3.jpg');
+}
+.queimg5{
+	background-image:url('images/rockstar.jpg');
+}
+.queimg6{
+	background-image:url('images/tara.jpg');
+}
+.queimg7{
+	background-image:url('images/workout.jpg');
+}
+.queimg8{
+	background-image:url('images/Zayn.jpg');
+}
+.queimg9{
+	background-image:url('images/party.jpg');
+}
+.queimg10{
+	background-image:url('images/roadtrip.jpg');
+}
+.queimg11{
+	background-image:url('images/rock.jpg');
+}
+.queimg12{
+	background-image:url('images/kate.jpg');
+}
+/* aside section */
+aside{
+	display:block;
+	margin-left:60%;
+	height:175vh;
+	width:22.92%;
+	background-color: #050534bd;
+	position:fixed;
+	top:10%;
+	right:262px;
+
+}
+/* similar artist */
+#similar-artist{
+display: flex;
+flex-wrap: wrap;
+flex-direction:row;
+justify-content:space-around;
+width:100%;
+height:21%;
+position:relative;
+top:0.5%;
+
+}
+.artist-heading{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	height:40px;
+	width:100%;
+	text-align:center;
+	margin-top: 6%;
+}
+.onism{
+	width:100%;
+	height:65px;
+	/* margin-left:-4%; */ 
+	margin-bottom:3%;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	
+}
+.onism .onism-picture{
+	height:100%;
+	width:70px;
+	/* border:1px solid black; */
+	background-image:url("images/imaginedragon.jpg");
+	background-size:cover;
+	background-position:center; 
+	/* background-attachment: fixed; */
+}
+.onism-picture:hover{
+	opacity:0.8;
+}
+.onism24{
+	position: relative;
+	bottom:7%;
+}
+.release-date{
+	height:100%;
+	width:80px;
+	/* border: 1px solid black; */
+	margin-left:4%;
+}
+.release-date p{
+	font-family:sans-serif;
+	color: grey;
+	font-size:0.6rem;
+	position: relative;
+	bottom:12px;
+}
+.release-date h5{
+	font-family:sans-serif;
+	color: white;
+	font-size:0.6rem;
+}
+.hamburg{
+	position: relative;
+	left:15%;
+}
+#recently-played{
+	width:100%;
+	height:23.7%;
+}
+/* queue section */
+.queue{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	height:80%;
+	width:100%;
+	overflow-y:scroll;
+	z-index:10;
+}
+.queue::-webkit-scrollbar{
+	display: none;
+}
+.queue .queue-same{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+	width:100%;
+	height:45px;
+}
+.queimg{
+	height: 32px;
+	width:32px;
+	position:relative;
+	right:57px;
+	background-size: cover;
+	background-position:center;
+}
+.queue-title{
+	height:40px;
+	width:100px;
+	text-align: left;
+	line-height:10px;
+	position: relative;
+	right:28%;
+	font-family: sans-serif;
+
+
+}
+.number{
+	color:grey;
+	font-family: sans-serif;
+	font-size: 0.7rem;
+	position:relative;
+	right:18px;
+}
+.queue-title h4{
+	color:white;
+	font-size:.7rem;
+	margin-top: 0;
+	margin-bottom:0;
+	position: relative;
+	top: 8px;
+
+}
+.queue-title p{
+	color:#ffffff96;
+	font-size:.7rem;
+	top:20px;
+}
+.queimg1{
+	background-image:url('images/roadtrip.jpg');
+}
+/* footer section */
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+	margin-left:15%;
+	height:7.6vh;
+	width:68%;
+	position:fixed;
+	top:88vh;
+	background-color:#000000c9;
+	z-index: 5;
+}
+/* song-name-section */
+.current-song{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+	height:100%;
+	width: 20%;
+}
+.current-song-image{
+	background-image:url('images/john.jpg');
+	background-size: cover;
+	background-position: center;
+	height:35px;
+	width: 35px;
+}
+.current-song-name{
+	height:30px;
+	width:70px;
+	/* border: 1px solid white; */
+	line-height:5px;
+	position: relative;
+	right:6%;
+
+	}
+.current-song-sign{
+	height: 40px;
+	width: 40px;
+	/* border: 1px solid white; */
+}
+.play-button{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	width:40%;
+}
+
+.play-button-signs{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+	height:50%;
+	width:60%;
+	position:relative;
+	top: 10%;
+	left:20%;
+}
+.play-button-time{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+	height:40%;
+	width:100%;
+	/* border:1px solid white; */
+
+
+}
+.play-button-time .start{
+	color: grey;
+	font-size:.6rem;
+
+}
+.song-time{
+	width:75%;
+	height:20%;
+	background-color:#607d8ba1;
+	border-radius:50px;
+
+}
+.song-done{
+	height: 100%;
+	width: 40%;
+	background-color:green;
+	border-radius: 50px;
+}
+.song-done::after{
+	content:'';
+	height:10px;
+	width:10px;
+	border-radius:50%;
+	position:absolute;
+	background-color:white;
+	right:52.5%;
+	bottom:12.8%;
+}
+.sound-control{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: center;
+	height: 100%;
+	width:20%;
+}
+.volume{
+	width:40%;
+	height:8%;
+	background-color:#607d8ba1;
+	border-radius:50px;
+
+}
+.volume-rase{
+	height: 100%;
+	width: 40%;
+	background-color:green;
+	border-radius: 50px;
+}
+.volume-rase::after{
+	content:'';
+	height:8px;
+	width:8px;
+	border-radius:50%;
+	position:absolute;
+	background-color:white;
+	right:11%;
+	bottom:42.8%;
+
+}
+

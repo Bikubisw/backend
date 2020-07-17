@@ -1,0 +1,40 @@
+body{
+	margin:10px;
+}
+.div1::first-letter{
+	font-size:1.5rem;
+	font-weight: bold;
+	text-transform:capitalize;
+
+}
+ul{
+	list-style:none;
+}
+li::before{
+	content:'';
+	display: inline-block;
+	height: 18px;
+	width: 20px;
+	background-image:url("IMAGE/Biku.jpg");
+	background-size:contain;
+
+}
+p::before{
+	content:'before';
+	font-size:1.5rem;
+	font-weight: bold;
+	text-transform:capitalize;
+
+}
+p::after{
+	content:'';
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-image:url("IMAGE/Biku.jpg");
+	background-size:contain;
+	font-size:1.5rem;
+	font-weight: bold;
+	text-transform:capitalize;
+
+}
